@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameZone Ultra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP NAV -->
+<header class="top-nav">
+  <div class="logo">🎮 GameZone Ultra</div>
+  <input type="search" id="searchInput" placeholder="Search games..." />
+</header>
+
+<!-- FEATURED SLIDER -->
+<section class="featured-slider" id="featuredSlider"></section>
+
+<!-- USER OPTIONS -->
+<section class="user-options">
+  <button onclick="showAll()">All</button>
+  <button onclick="showFavorites()">❤️ Favorites</button>
+  <button onclick="showDownloads()">⬇ Downloads</button>
+  <select onchange="sortGames(this.value)">
+    <option value="default">Sort</option>
+    <option value="rating">Rating</option>
+    <option value="name">Name</option>
+  </select>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories" id="categoryBar"></section>
+
+<!-- GAME GRID -->
+<main class="game-grid" id="gameGrid"></main>
+
+<!-- GAME DETAILS MODAL -->
+<div class="modal" id="gameModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    <img id="modalImage">
+    <h2 id="modalTitle"></h2>
+    <p id="modalCategory"></p>
+    <p id="modalRating"></p>
+    <button id="downloadBtn">Install</button>
+    <button onclick="toggleFavorite()">❤️ Favorite</button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 GameZone Ultra – All Rights Reserved</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Racing X",
+    "category": "Racing",
+    "rating": 4.8,
+    "image": "assets/images/game1.jpg",
+    "link": "https://example.com/racing.apk"
+  },
+  {
+    "name": "Zombie Attack",
+    "category": "Action",
+    "rating": 4.6,
+    "image": "assets/images/game2.jpg",
+    "link": "https://example.com/zombie.apk"
+  },
+  {
+    "name": "Puzzle Mania",
+    "category": "Puzzle",
+    "rating": 4.4,
+    "image": "assets/images/game3.jpg",
+    "link": "https://example.com/puzzle.apk"
+  }
+]
